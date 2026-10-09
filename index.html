@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Matheus Vicente | Desenvolvimento Web & Sites Personalizados</title>
+    <!-- FontAwesome CDN para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Canvas de Fundo para Efeito de Partículas e Orbes -->
+    <canvas id="bg-canvas"></canvas>
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+
+    <!-- Barra de Navegação Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">Matheus<span>.dev</span></a>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#about" class="nav-link">Sobre</a></li>
+                    <li><a href="#web-services" class="nav-link highlight-link">Sites Personalizados</a></li>
+                    <li><a href="#projects" class="nav-link">Projetos Dev</a></li>
+                    <li><a href="#resume" class="nav-link">Currículo</a></li>
+                    <li><a href="#contact" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger" aria-label="Menu Mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Hero -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-profile-img">
+                    <img src="perfil.jpg" alt="Matheus Vicente de Oliveira Vieira">
+                    <div class="glow-ring"></div>
+                </div>
+                <div class="hero-content">
+                    <div class="badge">
+                        <span class="pulse"></span> Desenvolvedor Web & ADS
+                    </div>
+                    <h1>Desenvolvimento de <span class="text-glow">Sites Personalizados</span> & Software</h1>
+                    <p class="hero-subtitle">
+                        Transformo marcas e projetos em experiências digitais modernas, de alta performance e totalmente sob medida para o seu negócio.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#web-services" class="btn btn-primary">
+                            <span>Solicitar Site Personalizado</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="https://wa.me/5511926202068?text=Ol%C3%A1%20Matheus!%20Gostaria%20de%20fazer%20um%20or%C3%A7amento%20para%20um%20site%20personalizado." target="_blank" rel="noopener" class="btn btn-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i> Orçamento no WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre Mim -->
+        <section id="about" class="section-container">
+            <h2 class="section-title">Sobre <span>Mim</span></h2>
+            <div class="glass-card about-grid">
+                <div class="about-text">
+                    <h3>Matheus Vicente de Oliveira Vieira</h3>
+                    <p>
+                        Estudante de Análise e Desenvolvimento de Sistemas (2º Semestre) e Desenvolvedor Freelancer especializado na criação de websites profissionais, e-commerces e páginas de conversão.
+                    </p>
+                    <p>
+                        Trabalho com soluções completas: desde o design moderno responsivo até a integração de hospedagem, domínio, bancos de dados e otimização para buscadores (SEO).
+                    </p>
+                    
+                    <div class="tech-stack">
+                        <h4>Competências & Ferramentas</h4>
+                        <div class="tech-tags">
+                            <span class="tag"><i class="fa-brands fa-js"></i> JavaScript (ES6+)</span>
+                            <span class="tag"><i class="fa-brands fa-html5"></i> HTML5 / CSS3</span>
+                            <span class="tag"><i class="fa-solid fa-server"></i> Vercel / GitHub Pages</span>
+                            <span class="tag"><i class="fa-solid fa-database"></i> MySQL / Firebase</span>
+                            <span class="tag"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+                            <span class="tag"><i class="fa-solid fa-bolt"></i> Performance & SEO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="setup-container">
+                    <div class="setup-card">
+                        <img src="setup.jpg" alt="Setup de Desenvolvimento do Matheus">
+                        <span class="setup-caption"><i class="fa-solid fa-terminal"></i> Meu Espaço de Criação & Desenvolvimento</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: SITES PERSONALIZADOS & SERVIÇOS -->
+        <section id="web-services" class="section-container">
+            <div class="section-header-center">
+                <span class="sub-badge">Soluções Digitais</span>
+                <h2 class="section-title">Criação de <span>Sites Personalizados</span></h2>
+                <p class="section-desc">Desenvolvimento sob medida para empresas, marcas de roupas, fotógrafos, prestadores de serviços e criadores de conteúdo.</p>
+            </div>
+
+            <!-- Destaque Exemplo Real: Panf Clothing -->
+            <div class="glass-card showcase-card">
+                <div class="showcase-badge"><i class="fa-solid fa-star"></i> Projeto em Destaque</div>
+                <div class="showcase-grid">
+                    <div class="showcase-info">
+                        <h3>E-Commerce / Catálogo: <br><span class="text-glow">Panf Clothing</span></h3>
+                        <p class="showcase-company"><strong>Cliente:</strong> Panf Clothing (Marca de Moda / Streetwear)</p>
+                        <p>
+                            Website desenvolvido sob medida para a marca Panf Clothing, focado na apresentação de coleções exclusivas, layout dark mode moderno, responsividade total para celulares e redirecionamento de compras via WhatsApp.
+                        </p>
+                        <ul class="showcase-features">
+                            <li><i class="fa-solid fa-check"></i> Design moderno voltado para streetwear</li>
+                            <li><i class="fa-solid fa-check"></i> Layout 100% responsivo para mobile e desktop</li>
+                            <li><i class="fa-solid fa-check"></i> Botões de pedido e suporte via WhatsApp</li>
+                            <li><i class="fa-solid fa-check"></i> Código fonte hospedado e publicado no GitHub Pages</li>
+                        </ul>
+                        <div class="showcase-actions">
+                            <a href="https://theusvicente.github.io/PanfClothing/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Acessar Site Ao Vivo
+                            </a>
+                            <a href="https://wa.me/5511926202068?text=Ol%C3%A1%20Matheus!%20Vi%20o%20site%20da%20Panf%20Clothing%20e%20quero%20um%20site%20parecido%20para%20minha%20marca." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+                                <i class="fa-brands fa-whatsapp"></i> Quero um Site Assim
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Foto do Panf Clothing com Link Direto no Preview -->
+                    <div class="showcase-visual">
+                        <div class="mockup-window">
+                            <div class="mockup-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                                <span class="mockup-url">theusvicente.github.io/PanfClothing/</span>
+                            </div>
+                            <div class="mockup-img-container">
+                                <a href="https://theusvicente.github.io/PanfClothing/" target="_blank" rel="noopener" class="project-screenshot-link">
+                                    <img src="panf.jpg" alt="Captura de tela do site Panf Clothing" class="project-screenshot">
+                                    <div class="preview-overlay">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        <span>Acessar Site Ao Vivo</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tipos de Sites Atendidos -->
+            <h3 class="subsection-title">O que desenvolvemos para a sua marca</h3>
+            <div class="services-grid">
+                <div class="glass-card service-card">
+                    <div class="service-icon"><i class="fa-solid fa-shirt"></i></div>
+                    <h3>Moda & E-Commerce</h3>
+                    <p>Sites e catálogos para marcas de roupas, boutiques e lojas virtuais com vitrine de produtos e integração direta de pedidos no WhatsApp.</p>
+                    <a href="https://wa.me/5511926202068?text=Ol%C3%A1%20Matheus!%20Quero%20um%20or%C3%A7amento%20para%20site%20de%20Moda/E-Commerce." target="_blank" class="service-link">
+                        Pedir Orçamento <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="glass-card service-card">
+                    <div class="service-icon"><i class="fa-solid fa-camera"></i></div>
+                    <h3>Fotografia & Portfólios</h3>
+                    <p>Portfólios fotográficos elegantes, galerias responsivas em alta resolução para fotógrafos, filmmakers, designers e modelos.</p>
+                    <a href="https://wa.me/5511926202068?text=Ol%C3%A1%20Matheus!%20Quero%20um%20or%C3%A7amento%20para%20site%20de%20Fotografia/Portf%C3%B3lio." target="_blank" class="service-link">
+                        Pedir Orçamento <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="glass-card service-card">
+                    <div class="service-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                    <h3>Divulgação & Landing Pages</h3>
+                    <p>Páginas focadas em conversão rápida de clientes para eventos, lançamentos de produtos, cursos, e-books e serviços profissionais.</p>
+                    <a href="https://wa.me/5511926202068?text=Ol%C3%A1%20Matheus!%20Quero%20um%20or%C3%A7amento%20para%20Landing%20Page/Divulga%C3%A7%C3%A3o." target="_blank" class="service-link">
+                        Pedir Orçamento <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="glass-card service-card">
+                    <div class="service-icon"><i class="fa-solid fa-briefcase"></i></div>
+                    <h3>Sites Institucionais</h3>
+                    <p>Websites para empresas, clínicas, escritórios e profissionais autônomos apresentarem sua história, serviços e dados de contato.</p>
+                    <a href="https://wa.me/5511926202068?text=Ol%C3%A1%20Matheus!%20Quero%20um%20or%C3%A7amento%20para%20Site%20Institucional." target="_blank" class="service-link">
+                        Pedir Orçamento <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Fornecedores & Infraestrutura -->
+            <div class="glass-card tech-suppliers-card">
+                <h3><i class="fa-solid fa-network-wired"></i> Infraestrutura & Tecnologias Utilizadas</h3>
+                <p>Garantimos que o seu site seja entregue em plataformas modernas, seguras e de alta velocidade:</p>
+                <div class="suppliers-grid">
+                    <div class="supplier-item">
+                        <i class="fa-solid fa-cloud"></i>
+                        <div>
+                            <strong>Hospedagem & Nuvem</strong>
+                            <span>Vercel, GitHub Pages, Firebase Hosting (Latência ultra baixa)</span>
+                        </div>
+                    </div>
+                    <div class="supplier-item">
+                        <i class="fa-solid fa-globe"></i>
+                        <div>
+                            <strong>Domínio & SSL</strong>
+                            <span>Registro.br, Cloudflare (Certificado de Segurança SSL Grátis)</span>
+                        </div>
+                    </div>
+                    <div class="supplier-item">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div>
+                            <strong>Integrações de Vendas</strong>
+                            <span>WhatsApp Business API Direct, Formulários Dinâmicos e Redes Sociais</span>
+                        </div>
+                    </div>
+                    <div class="supplier-item">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <div>
+                            <strong>Mobile First</strong>
+                            <span>Design 100% otimizado para celulares, tablets e computadores</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banner CTA WhatsApp -->
+            <div class="cta-banner glass-card">
+                <div class="cta-banner-content">
+                    <h3>Pronto para levar sua marca para o próximo nível?</h3>
+                    <p>Entre em contato diretamente comigo pelo WhatsApp para discutir a sua ideia e receber uma estimativa de prazo e orçamento sem compromisso.</p>
+                </div>
+                <a href="https://wa.me/5511926202068?text=Ol%C3%A1%20Matheus!%20Quero%20solicitar%20um%20or%C3%A7amento%20para%20meu%20site%20personalizado." target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">
+                    <i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp
+                </a>
+            </div>
+        </section>
+
+        <!-- Seção Projetos Dev -->
+        <section id="projects" class="section-container">
+            <h2 class="section-title">Projetos <span>Dev & ADS</span></h2>
+            <div class="projects-grid">
+                <div class="glass-card project-card">
+                    <div class="project-header">
+                        <i class="fa-solid fa-folder-open folder-icon"></i>
+                        <div class="project-links">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                    </div>
+                    <h3>Sistema de Gestão Acadêmica</h3>
+                    <p>Modelagem e consulta de banco de dados relacional para controle de matrículas, cursos e notas de alunos.</p>
+                    <ul class="project-tech">
+                        <li>SQL</li>
+                        <li>Java</li>
+                        <li>POO</li>
+                    </ul>
+                    <button class="btn-text open-modal" data-modal="modal-1">
+                        Ver Código <i class="fa-solid fa-code"></i>
+                    </button>
+                </div>
+
+                <div class="glass-card project-card">
+                    <div class="project-header">
+                        <i class="fa-solid fa-folder-open folder-icon"></i>
+                        <div class="project-links">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                    </div>
+                    <h3>Visualizador de Algoritmos</h3>
+                    <p>Exercício prático em JavaScript demonstrando algoritmos de ordenação (Bubble Sort) com resposta em tempo real.</p>
+                    <ul class="project-tech">
+                        <li>JavaScript</li>
+                        <li>Algoritmos</li>
+                        <li>DOM</li>
+                    </ul>
+                    <button class="btn-text open-modal" data-modal="modal-2">
+                        Ver Código <i class="fa-solid fa-code"></i>
+                    </button>
+                </div>
+
+                <div class="glass-card project-card">
+                    <div class="project-header">
+                        <i class="fa-solid fa-folder-open folder-icon"></i>
+                        <div class="project-links">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                    </div>
+                    <h3>Gerenciador de Tarefas / Sprints</h3>
+                    <p>Aplicação interativa de lista de tarefas utilizando salvamento no Local Storage do navegador.</p>
+                    <ul class="project-tech">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Vanilla JS</li>
+                    </ul>
+                    <button class="btn-text open-modal" data-modal="modal-3">
+                        Ver Código <i class="fa-solid fa-code"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Currículo -->
+        <section id="resume" class="section-container">
+            <h2 class="section-title">Aba <span>Currículo</span></h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">Cursando</span>
+                        <h3>2º Semestre - Análise e Desenvolvimento de Sistemas</h3>
+                        <p>Aprofundando em Programação Orientada a Objetos, Engenharia de Software, Estrutura de Dados e Bancos de Dados Relacionais.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">1º Semestre</span>
+                        <h3>Fundamentos da Computação</h3>
+                        <p>Lógica de programação, algoritmos, fluxogramas, arquitetura de computadores e introdução às linguagens de programação.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contact" class="section-container">
+            <h2 class="section-title">Entre em <span>Contato</span></h2>
+            <div class="contact-grid">
+                <div class="contact-info glass-card">
+                    <h3>Fale Comigo</h3>
+                    <p>Aberto para orçamentos de sites personalizados, oportunidades de estágio e projetos acadêmicos.</p>
+                    
+                    <div class="contact-method">
+                        <i class="fa-brands fa-whatsapp contact-icon"></i>
+                        <div>
+                            <span>WhatsApp Direct</span>
+                            <a href="https://wa.me/5511926202068" target="_blank" rel="noopener">(11) 92620-2068</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <i class="fa-solid fa-envelope contact-icon"></i>
+                        <div>
+                            <span>E-mail</span>
+                            <a href="mailto:theus.vicenteo@gmail.com">theus.vicenteo@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/theusvicente" target="_blank" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form glass-card" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" required placeholder="Seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" required placeholder="seu.email@exemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem ou Projeto Desejado</label>
+                        <textarea id="message" rows="5" required placeholder="Descreva brevemente o site ou projeto que você precisa..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary form-submit">
+                        <span>Enviar Mensagem</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Matheus Vicente de Oliveira Vieira. Desenvolvimento de Sites Personalizados & Software.</p>
+    </footer>
+
+    <!-- Modais de Código -->
+    <div class="modal" id="modal-1">
+        <div class="modal-content glass-card">
+            <span class="close-modal">&times;</span>
+            <h3>Consulta SQL do Banco de Dados</h3>
+            <pre><code>SELECT s.aluno_id, s.nome, c.nome_curso, e.nota
+FROM Alunos s
+JOIN Matriculas e ON s.aluno_id = e.aluno_id
+JOIN Cursos c ON e.curso_id = c.curso_id
+WHERE e.nota >= 7.0
+ORDER BY e.nota DESC;</code></pre>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-2">
+        <div class="modal-content glass-card">
+            <span class="close-modal">&times;</span>
+            <h3>Algoritmo Bubble Sort em JavaScript</h3>
+            <pre><code>function bubbleSort(arr) {
+    let len = arr.length;
+    for (let i = 0; i < len; i++) {
+        for (let j = 0; j < len - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                let temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    return arr;
+}</code></pre>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-3">
+        <div class="modal-content glass-card">
+            <span class="close-modal">&times;</span>
+            <h3>Salvamento no Local Storage</h3>
+            <pre><code>const salvarTarefas = (tarefas) => {
+    try {
+        const jsonTarefas = JSON.stringify(tarefas);
+        localStorage.setItem('minhas_tarefas', jsonTarefas);
+    } catch (error) {
+        console.error("Erro ao salvar no storage:", error);
+    }
+};</code></pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
